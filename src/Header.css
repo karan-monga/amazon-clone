@@ -1,11 +1,57 @@
+:link {
+  text-decoration: none;
+}
+
 .header {
-  height: 60px;
+  padding-top: 20px;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color: #131921;
+  background-color: white;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.header-line {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.header-line2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #949494;
+  width: 100%;
+}
+
+.header-row2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  border-bottom: 1px solid #ece2e2;
+  width: 100%;
+}
+
+.row2-left {
+  width: 50%;
+  display: flex;
+  padding-left: 20px;
+  justify-content: left;
+}
+
+.row2-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
 }
 
 .header_logo {
@@ -19,20 +65,36 @@
   display: flex;
   flex: 1;
   align-items: center;
+  width: 60%;
   border-radius: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header_searchInput {
-  height: 12px;
+  height: 18px;
   padding: 10px;
+  width: 30%;
   border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   width: 100%;
+  background-color: #f4f6f8;
+}
+
+.header_searchInput:focus {
+  outline: none !important;
+  border: 1px solid #7f848a;
+  box-shadow: 0 0 4px #9199a1;
 }
 
 .header_searchIcon {
-  padding: 5px;
-  height: 22px !important;
-  background-color: #cd9042;
+  padding: 10px;
+  height: 20px !important;
+  background-color: #fdbe68;
+  margin-left: -20px;
+  border-radius: 10px;
+  /* border-bottom-right-radius: 10px; */
 }
 
 .header_link_line1 {
@@ -41,13 +103,26 @@
 
 .header_link_line2 {
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
+}
+
+.header_link_line3 {
+  font-size: 13px;
+  padding-left: 5px;
+  font-weight: 700;
+  color: #6a737e;
+}
+
+.spaced-link {
+  font-size: 13px;
+  margin-left: 40px;
+  font-weight: 600;
 }
 
 .header_link-cart {
   display: flex;
   align-items: center;
-  color: white;
+  color: #6a737e;
 }
 
 .header_link-cart-count {
@@ -61,16 +136,13 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-right: 20px;
 }
 
 .header_link {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: white;
-}
-
-.header {
-  padding-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #444444;
 }

@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App";
 import reducer, { initialState } from "./reducer";
 import { StateProvider } from "./StateProvider";
+import "typeface-roboto";
+
 
 ReactDOM.render(
   <React.StrictMode>
