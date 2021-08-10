@@ -1,6 +1,6 @@
 # Amazon 2021 Clone
 
-## Rebuilt the Amazon Web App in React with redesigned components to give good ol' Amazon a much needed facelift
+Rebuilt the Amazon Web App in React with redesigned components to give good ol' Amazon a much needed facelift
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
