@@ -24,11 +24,14 @@ function Header() {
           <SearchIcon className="header_searchIcon"></SearchIcon>
           {/* Logo */}
         </div>
+        
         <div className="header_nav">
+        <Link to="/login">
           <div className="header_link">
             <span className="header_link_line1">Hello Guest</span>
-            <span className="header_link_line2">Sign In</span>
+           <span className="header_link_line2">Sign In</span>
           </div>
+          </Link>
           <div className="header_link">
             <span className="header_link_line1">Return</span>
             <span className="header_link_line2">& Orders</span>
@@ -65,7 +68,7 @@ function Header() {
         <div className="row2-right">
         <Link to="/checkout">
             <div className="header_link-cart">
-              <span className="spaced-link">Sell on Amazon</span>
+              <span className="spaced-link">Your orders</span>
             </div>
           </Link><Link to="/checkout">
             <div className="header_link-cart">

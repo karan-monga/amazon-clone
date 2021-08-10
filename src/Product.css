@@ -4,13 +4,14 @@
   align-items: left;
   justify-content: flex-end;
   margin: 10px;
-  padding: 20px;
+  padding-top: 20px;
   width: 100%;
   max-height: 400px;
   min-width: 100px;
   background-color: white;
   z-index: 1;
   border-radius: 20px;
+  color: #111;
 }
 
 .product > img {
@@ -22,14 +23,14 @@
 }
 
 .product_rating {
-    display: flex;
+  display: flex;
 }
 
-.product > button {
+.button-wrap > button {
   background: #f0c14b;
   width: 100px;
   border: 1px solid;
-  margin-top: 10px;
+  padding-left: 5px;
   border-radius: 10px;
   padding: 4px;
   border-color: #a88734 #9c7e31 #846a29;
@@ -40,10 +41,13 @@
   margin-top: 5px;
 }
 
+.button-wrap {
+  padding-left: 10px;
+}
+
 .product_info {
   height: 100px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 14px;
   font-weight: 600;
-
 }

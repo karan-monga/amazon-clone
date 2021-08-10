@@ -16,9 +16,9 @@ function Home() {
         <div className="home_row">
           <Product
             id="001"
-            title="The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses "
-            price={11.96}
-            image="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg"
+            title="Apple AirPods Pro"
+            price={189.99}
+            image="https://m.media-amazon.com/images/I/71zny7BTRlL._AC_SL1500_.jpg"
             rating={5}
           />
           <Product

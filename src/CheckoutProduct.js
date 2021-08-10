@@ -3,12 +3,14 @@ import "./CheckoutProduct.css";
 import { useStateValue } from "./StateProvider";
 
 function CheckoutProduct({ id, image, title, price, rating }) {
+  const [{ basket }, dispatch] = useStateValue();
 
-    const [{basket}, dispatch] = useStateValue ();
-
-    // const removeFromBasket = () => {
-
-    // }
+  const removeFromBasket = () => {
+    dispatch({
+      type: "REMOVE_FROM_BASKET",
+      id: id,
+    });
+  };
   return (
     <div className="checkoutProduct">
       <img className="checkoutProduct_image" src={image} alt="" />
@@ -26,7 +28,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
               <p>⭐</p>
             ))}
         </div>
-        {/* <button onclick={removefrombasket()}>Remove from Cart</button> */}
+        <button onClick={removeFromBasket}>Remove from Cart</button>
       </div>
     </div>
   );
