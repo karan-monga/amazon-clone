@@ -14,7 +14,7 @@ function Header() {
     if (user) {
       auth.signOut();
       console.log("Yooo " + user);
-      console.log("ding");
+     
     }
   };
 
@@ -37,7 +37,9 @@ function Header() {
         <div className="header_nav">
           <Link onClick={handleAuthentication} to={!user && "/login"}>
             <div className="header_link">
-              <span className="header_link_line1">Hello Guest</span>
+              <span className="header_link_line1">
+                Hello {!user ? "Guest" : user.email}
+              </span>
               <span className="header_link_line2">
                 {user ? "Sign out" : "Sign in"}
               </span>
